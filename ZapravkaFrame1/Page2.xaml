@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
 
-    <Grid Background="#FFFCB5F9" Height="450" Width="800">
+    <Grid Background="#FFFDE5E5" Height="450" Width="800">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="49*"></ColumnDefinition>
             <ColumnDefinition Width="197*"></ColumnDefinition>
@@ -37,7 +37,7 @@
         <TextBox x:Name="TextBox1" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="32,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Width="48" IsEnabled="False" FontSize="18"/>
         <TextBox x:Name="TextBox2" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="32,17,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="48" IsEnabled="False" FontSize="18"/>
         <TextBox x:Name="TextBox3" Grid.Column="3" HorizontalAlignment="Left" Height="27" Margin="32,17,0,0" Grid.Row="3" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="48" IsEnabled="False" FontSize="18"/>
-        <Button Grid.Column="1" Content="Итого" HorizontalAlignment="Center" Height="55" Grid.Row="4" VerticalAlignment="Center" Width="177" FontSize="20" Background="#FFD198D3" Click="Button_Click"/>
+        <Button Grid.Column="1" Content="Итого" HorizontalAlignment="Left" Height="55" Grid.Row="4" VerticalAlignment="Center" Width="140" FontSize="20" Background="#FFFADAFB" Click="Button_Click" Margin="9,0,0,0"/>
         <Label Grid.Column="2" Content="Цена" HorizontalAlignment="Left" Margin="25,30,0,9" FontSize="20" RenderTransformOrigin="0.127,0.374"/>
         <Label Grid.Column="3" Content="Количество" HorizontalAlignment="Left" Margin="10,30,0,9" FontSize="20" RenderTransformOrigin="0.127,0.374"/>
     </Grid>

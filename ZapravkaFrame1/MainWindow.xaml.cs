@@ -22,14 +22,12 @@ namespace ZapravkaFrame1
     {
         public MainWindow()
         {
+
             InitializeComponent();
-        }
 
-        private void Frame_Navigated(object sender, NavigationEventArgs e)
-        {
+            Frame1.Content = new Page3();
 
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame1.Content = new Page1();
@@ -39,6 +37,19 @@ namespace ZapravkaFrame1
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Frame1.Content = new Page2();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Frame1.Content = new Page3();
+
+        }
+
+        private void Frame_Navigated(object sender, NavigationEventArgs e)
+        {
+
+
+
         }
     }
 }

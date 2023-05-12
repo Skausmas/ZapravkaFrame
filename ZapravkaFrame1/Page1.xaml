@@ -8,11 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page1">
 
-    <Grid Background="#FF8789C1" Height="450" Width="800">
+    <Grid Background="#FFD3D3D8" Height="450" Width="800">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="49*"></ColumnDefinition>
             <ColumnDefinition Width="197*"></ColumnDefinition>
-            <ColumnDefinition Width="153*"></ColumnDefinition>
+            <ColumnDefinition Width="94*"></ColumnDefinition>
+            <ColumnDefinition Width="59*"/>
             <ColumnDefinition Width="401*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -28,14 +29,14 @@
         <Label Grid.Column="1" Content="Цена" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="177" FontSize="20" Grid.Row="1"/>
         <Label Grid.Column="1" Content="Литры" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="177" FontSize="20" Grid.Row="2"/>
         <Label Grid.Column="1" Content="Сумма" HorizontalAlignment="Center" Height="55" VerticalAlignment="Center" Width="177" FontSize="20" Grid.Row="3"/>
-        <ComboBox x:Name="ComboBox1" Grid.Column="2" HorizontalAlignment="Center" Height="55" VerticalAlignment="Bottom" Width="133" Margin="0,0,0,10" SelectionChanged="ComboBox1_SelectionChanged" FontSize="20"/>
-        <TextBox x:Name="TextBox1" Grid.Column="2" HorizontalAlignment="Center" Height="55" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="126" IsEnabled="False" FontSize="20"/>
-        <TextBox x:Name="TextBox2" Grid.Column="2" HorizontalAlignment="Center" Height="55" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="126" IsEnabled="False" FontSize="20"/>
-        <TextBox x:Name="TextBox3" Grid.Column="2" HorizontalAlignment="Center" Height="55" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="126" IsEnabled="False" FontSize="20"/>
+        <ComboBox x:Name="ComboBox1" Grid.Column="2" HorizontalAlignment="Left" Height="55" VerticalAlignment="Center" Width="133" Margin="10,0,0,0" SelectionChanged="ComboBox1_SelectionChanged" FontSize="20" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TextBox1" Grid.Column="2" HorizontalAlignment="Left" Height="55" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="126" IsEnabled="False" FontSize="20" Grid.ColumnSpan="2" Margin="14,0,0,0"/>
+        <TextBox x:Name="TextBox2" Grid.Column="2" HorizontalAlignment="Left" Height="55" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="126" IsEnabled="False" FontSize="20" Grid.ColumnSpan="2" Margin="14,0,0,0"/>
+        <TextBox x:Name="TextBox3" Grid.Column="2" HorizontalAlignment="Left" Height="55" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="126" IsEnabled="False" FontSize="20" Grid.ColumnSpan="2" Margin="14,0,0,0"/>
         <RadioButton x:Name="Litr" Content="" HorizontalAlignment="Center" Height="27" Grid.Row="2" VerticalAlignment="Center" Width="29" RenderTransformOrigin="0.319,-0.278" Checked="Litr_Checked"/>
         <RadioButton x:Name="Summ" Content="" HorizontalAlignment="Center" Height="26" Grid.Row="3" VerticalAlignment="Center" Width="29" RenderTransformOrigin="0.319,-0.278" Checked="Summ_Checked"/>
-        <Button x:Name="Button1" Grid.Column="1" Content="Итого" HorizontalAlignment="Left" Height="55" Margin="10,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="142" Background="#FF7F6CE0" FontSize="20" Click="Button1_Click"/>
-        <TextBox x:Name="Price" Grid.Column="2" HorizontalAlignment="Center" Height="55" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="126" IsEnabled="False" FontSize="20"/>
+        <Button x:Name="Button1" Grid.Column="1" Content="Итого" HorizontalAlignment="Left" Height="55" Margin="10,0,0,0" Grid.Row="4" VerticalAlignment="Center" Width="142" Background="#FFCFCCE2" FontSize="20" Click="Button1_Click"/>
+        <TextBox x:Name="Price" Grid.Column="2" HorizontalAlignment="Left" Height="55" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="126" IsEnabled="False" FontSize="20" Grid.ColumnSpan="2" Margin="14,0,0,0"/>
 
     </Grid>
 </Page>
